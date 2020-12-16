@@ -243,6 +243,25 @@ export class AppComponent {
 
 ---
 
+# pipe - static functions
+
+<pre><font color="#A6E22E"><b>ryoji@ubuntu</b></font>:<font color="#66D9EF"><b>~/dev/my-angular</b></font>$ ng generate pipe pipe/mypipe
+<font color="#A6E22E">CREATE</font> src/app/pipe/mypipe.pipe.spec.ts (187 bytes)
+<font color="#A6E22E">CREATE</font> src/app/pipe/mypipe.pipe.ts (217 bytes)
+<font color="#A1EFE4">UPDATE</font> src/app/app.module.ts (449 bytes)
+</pre>
+
+```
+ @NgModule({
+   declarations: [
+	 ...
++    MypipePipe
+```
+
+![](./imgs/pipe-function.png)
+
+---
+
 # MyAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
