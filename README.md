@@ -222,6 +222,27 @@ Build at: <font color="#F9F8F5"><b>2020-12-16T03:12:54.109Z</b></font> - Hash: <
 
 ![](./imgs/xyz-works.png)
 
+---
+
+# Hoge Service dependency injection
+```
+ryoji@ubuntu:/media/dev/my-angular$ ng generate service hoge
+CREATE src/app/hoge.service.spec.ts (347 bytes)
+CREATE src/app/hoge.service.ts (133 bytes)
+```
+
+```
+export class AppComponent {
+	title = 'my-angular';
+	constructor(
+    private h: HogeService,
+  ) { }
+```
+
+![](./imgs/hoge-instance-injected-constructor.png)
+
+---
+
 # MyAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
